@@ -1,0 +1,28 @@
+{% include 'h.html' %}
+
+<div class="container ">
+    <div class="row ">
+        {% for a in c_data %}
+
+        <div class="col-6 col-sm-2" >
+            <div class="card py-6 border border-dark px-1 py-1"  >
+                <a href="{{a.link}}" style="text-decoration: none;" >
+                <img src="/media/{{a.photo}} " class="card-img-top image-fluid " alt="...">
+                <div class="card-body">
+                    <p class="card-title text-dark fs-4">{{a.title}}</p>
+                    <p class="card-text text-dark fs-5">{{a.descript}}</p></a>
+
+
+                </div>
+                
+                
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+
+{% include 'f.html' %}
+

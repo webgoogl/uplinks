@@ -1,0 +1,21 @@
+{% include 'h.html' %}
+
+<div class="container">
+    <div class="row">
+        {% for a in a_data %}
+
+        <div class="col-6 col-sm-2 bg-dark ">
+            <div class=" card mx-1 my-1 mt-4  ">
+                <a href="{{a.a_link}}" style="text-decoration: none; color: black;">
+                <img src="/media/{{a.a_photo}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{a.a_title}}</h5>
+                    <p class="card-text">{{a.a_descript}}</p>
+                </div></a>
+                
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% include 'f.html' %}
