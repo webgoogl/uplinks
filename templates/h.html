@@ -18,9 +18,8 @@
     <nav class=" d-flex">
         <div class="container-fluid navbar navbar-expand-lg navbar-dark bg-dark d-flex justify-content-center">
             
-            <div class="d-grid gap-2">
-                <button class="btn btn-warning border border-0 border-light " type="button">Uplinks</button>
-               
+            <div class="" >
+                <h2><span class="badge bg-warning text-dark ">Uplinks</span></h2>               
               </div>
 
             </div>
@@ -90,12 +89,14 @@
 
     <div class="" >
         <div class="d-flex justify-content-center  my-6 gap-4" style="height: 60px;">
-            <button type="button" class="btn btn-info text-dark w-25 h-75  fs-3 rounded-pill"><a  href="{% url 'home' %}" style="text-decoration: none; color: black; ">Links</a></button>
-            <button type="button" class="btn btn-success btn-sm w-50 h-75 fs-3  rounded-pill" ><a  href="{% url 'feature' %}" style="text-decoration: none; color: white;">Lastest webseries</button></a>
+            <a  href="{% url 'home' %}" style="text-decoration: none; color: black; "><h1><span class="badge bg-info text-dark rounded-pill">Links</span></h1></a>
+            <a  href="{% url 'feature' %}" style="text-decoration: none; color: black; "><h1><span class="badge bg-success text-light rounded-pill">Latest Webseries 2023</span></h1></a>
 
         </div>
-        <div  class="d-flex justify-content-center gap-4 my-2" style="height:90px; text-decoration:none;">
-            <button type="button" class="btn btn-success btn-sm w-50 h-50  rounded-pill" ><a  href="{% url 'price' %}" class=" fs-3" style="text-decoration: none; color:white;">Latest movies</button></a>
-            <button type="button" class="btn btn-warning btn-sm w-25 h-50  fs-3 rounded-pill "><a href="{% url 'anime' %}" style="text-decoration: none; color: black;">Anime</button></a>
+        <div  class="d-flex justify-content-center gap-3 my-2" style="height:90px; text-decoration:none;">
+            <a  href="{% url 'price' %}" style="text-decoration: none; color: black; "><h1><span class="badge bg-success text-light rounded-pill">Latest Movie 2023</span></h1></a>
+
+            <a  href="{% url 'anime' %}" style="text-decoration: none; color: black; "><h1><span class="badge bg-warning text-dark rounded-pill">Anime HD</span></h1></a>
+
         </div>
     </div>
